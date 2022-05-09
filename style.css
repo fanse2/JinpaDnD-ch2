@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.container {
+    background-color: #666;
+}
+
+.title {
+    text-align: center;
+    /* display: flex; */
+}
+
+.table {
+    display: flex;
+    background-color: black;
+}
+
+.players {
+    width: 500px;
+}
+
+.player {
+    margin: 1rem;
+    padding: .2rem;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    transition: display 1.5s ease;
+
+}
+
+.player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-name {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 16px;
+}
+
+.avatar {
+    height: 80px;
+    border-radius: 5px;
+}
+
+.line {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    animation: moveup 1s linear;
+}
+
+@keyframes moveup {
+    from {transform: translateY(80%);}
+    to {transform: translateY(0%);}
+}
+
+.board {
+    background: black;
+    padding: 2px;
+    min-width: 600px;
+    min-height: 600px;
+}
+
+.status {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.dot {
+    background-color: #333;
+    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+}
+
+.pad {
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.play-button {
+    border: 1px solid black;
+    border-radius: 3px;
+    background: none;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background-color: beige;
+}
+
+#connal, #hellga, #hansoom, #inwang, #yomi, #ujang {
+    display: none;
+}
+
+.reset-button {
+    border: 1px solid white;
+    border-radius: 3px;
+    background: green;
+    padding: .5em 1em;
+    cursor: pointer;
+}
+
+.keyboard {
+    margin: .5rem;
+    display: grid;
+    grid-template-columns: repeat(13,1fr);
+    row-gap: .5rem;
+}
+
+.letter-button {
+    background-color: #68889E;
+    border-radius: 3px;
+    color:#FFF;
+    border-color: #2F3E48;
+    width: 30px;
+    height: 30px;
+}
+
+.objective {
+    font-size: 1.2rem;
+}
+
+/* Game Div */
+
+.game {
+    position: relative;
+    color: white;
+    background-color: black;
+    /* background-image: url(./images/milky-way-2695569__480.jpg); */
+}
+
+.center {
+    text-align: center;
+}
+
+.canvas-wrapper {
+    border-style: solid;
+    border-color: white;
+    width: 90%;
+    margin: 30px;
+    padding: 0;
+}
+
+canvas {
+    width: 100%;
+    background-image: url(./images/milky-way-2695569__480.jpg);
+
+}
+
+#start {
+    border: 1px solid #666;
+    background: none;
+    color: #FFF;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 2px;
+    margin: 3px;
+}
+
+#start:hover {
+    background: #666;
+}
+
+#msg {
+    font-size: 1.3rem;
+}

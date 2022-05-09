@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DnD Jinpa</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">진빠계 영웅전 - Chapter 2 <button class="play-button"><i class="fa-solid fa-play"></i></button></h2>
+        <div class="table">
+            <div class="players">
+                <div id="master" class="player">
+                    <div class="player-card">
+                        <img src="char/master.jpg" alt="" class="avatar">
+                        <div class="player-name">Master</div>
+                    </div>
+
+                    <div class="line"></div>
+                </div>
+                <div id="connal" class="player">
+                    <div class="player-card">
+                        <img src="char/connal.jpg" alt="" class="avatar">
+                        <div class="player-name">꼰날 장군</div>
+                    </div>
+
+                    <div class="line">...</div>
+                </div>
+                <div id="hellga" class="player">
+                    <div class="player-card">
+                        <img src="char/hellga.jpg" alt="" class="avatar">
+                        <div class="player-name">헬가 대령</div>
+                    </div>
+
+                    <div class="line">...</div>
+                </div>
+                <div id="hansoom" class="player">
+                    <div class="player-card">
+                        <img src="char/hansoom.jpg" alt="" class="avatar">
+                        <div class="player-name">한숨</div>
+                    </div>
+
+                    <div class="line">...</div>
+                </div>
+                <div id="yomi" class="player">
+                    <div class="player-card">
+                        <img src="char/yomi.jpg" alt="" class="avatar">
+                        <div class="player-name">Mr.요미</div>
+                    </div>
+
+                    <div class="line">...</div>
+                </div>
+                <div id="inwang" class="player">
+                    <div class="player-card">
+                        <img src="char/inwang.jpg" alt="" class="avatar">
+                        <div class="player-name">인왕</div>
+                    </div>
+
+                    <div class="line">...</div>
+                </div>
+                <div id="ujang" class="player">
+                    <div class="player-card">
+                        <img src="char/ujang.jpg" alt="" class="avatar">
+                        <div class="player-name">유짱회장</div>
+                    </div>
+
+                    <div class="line">...</div>
+                </div>
+
+            </div>
+           
+            <div class="board">
+                <div class="game center">
+                    <div class="canvas-wrapper">
+                        <p id="score">🛸🛸🛸</p>
+                        <canvas id="canvas-top"></canvas>
+                        <button id="start">시작</button>
+                        <p id="msg">방향키(←↑→↓)로 녹색 승리호를 조작하시면됩니다.<br>
+                        빨간박스의 자원을 수거하시오</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
